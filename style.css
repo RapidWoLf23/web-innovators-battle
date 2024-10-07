@@ -119,6 +119,11 @@ section.visible {
     opacity: 1; /* Fade in */
 }
 
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+
 
 footer {
     text-align: center;
