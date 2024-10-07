@@ -17,6 +17,26 @@ header {
     padding: 20px;
     text-align: center;
 }
+/* Header container to hold both logos and the title */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Aligns logos to either side */
+    align-items: center; /* Centers the text vertically between the logos */
+}
+
+.left-logo {
+    max-width: 100px; /* Adjust the size of the left logo */
+}
+
+.right-logo {
+    max-width: 100px; /* Adjust the size of the right logo */
+}
+
+header h1 {
+    text-align: center;
+    flex: 1; /* Makes the title take up the remaining space */
+    color: #000; /* Ensure the text color remains visible */
+}
 
 .logo {
     max-width: 150px; /* Adjust logo size */
