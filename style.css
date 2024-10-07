@@ -104,6 +104,22 @@ ul {
     flex: 1; /* Make sure the text takes up the remaining space */
 }
 
+section {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease; /* Transition effect */
+}
+
+/* Make sections visible when they are in the viewport */
+section.visible {
+    opacity: 1; /* Fade in */
+}
+
+
 footer {
     text-align: center;
     padding: 20px; /* Ensure there's enough padding */
