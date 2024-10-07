@@ -82,6 +82,24 @@ ul {
     margin-left: 20px; /* Indent for bullet points */
 }
 
+.about-content {
+    display: flex;
+    align-items: center; /* Aligns the text and image vertically */
+}
+
+.passport-photo {
+    max-width: 120px; /* Set the size for the passport photo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add slight rounding for aesthetics */
+    margin-right: 20px; /* Space between the image and the text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+.about-content p {
+    flex: 1; /* Make sure the text takes up the remaining space */
+}
+
+
 footer {
     text-align: center;
     padding: 20px; /* Ensure there's enough padding */
