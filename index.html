@@ -85,6 +85,35 @@
     <footer>
         <p>&copy; 2024 Web Innovators Battle</p>
     </footer>
+    <script>
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to add 'visible' class to sections in view
+    function handleScroll() {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check on page load
+    window.addEventListener('load', handleScroll);
+</script>
+
 </body>
 </html>
 <link rel="stylesheet" href="style.css">
