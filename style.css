@@ -87,18 +87,22 @@ ul {
     align-items: center; /* Aligns the text and image vertically */
 }
 
+..about-content {
+    display: flex;
+    align-items: center; /* Aligns the text and image vertically */
+}
+
 .passport-photo {
-    max-width: 120px; /* Set the size for the passport photo */
+    max-width: 80px; /* Set smaller width for the passport photo */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add slight rounding for aesthetics */
-    margin-right: 20px; /* Space between the image and the text */
+    border-radius: 5px; /* Add slight rounding for aesthetics */
+    margin-right: 15px; /* Space between the image and the text */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
 }
 
 .about-content p {
     flex: 1; /* Make sure the text takes up the remaining space */
 }
-
 
 footer {
     text-align: center;
