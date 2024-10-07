@@ -124,6 +124,15 @@ html {
 }
 
 
+.title {
+    font-family: 'Lobster', cursive; /* Eye-catching font */
+    font-size: 36px; /* Larger font size */
+    color: #fff; /* White color for visibility */
+    text-decoration: none; /* Remove underline */
+    margin: 0 20px; /* Add some margin */
+}
+
+
 
 footer {
     text-align: center;
