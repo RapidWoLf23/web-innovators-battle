@@ -44,35 +44,4 @@ section {
     padding: 20px;
     margin: 10px;
     background: #fff; /* White background for sections */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-h2 {
-    color: #333; /* Darker color for headings */
-    border-bottom: 2px solid #0056b3; /* Underline for headings */
-    padding-bottom: 10px;
-}
-
-ul {
-    margin-left: 20px; /* Indent for bullet points */
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #0056b3; /* Same color as header */
-    color: #fff;
-    position: relative; /* Changed to relative for better footer handling */
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px; /* Space above footer */
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block; /* Stack links vertically on smaller screens */
-        margin: 5px 0;
-    }
-}
+    border-radius: 8px; /* Rounde
