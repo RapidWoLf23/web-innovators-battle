@@ -45,3 +45,16 @@ section {
     margin: 10px;
     background: #fff; /* White background for sections */
     border-radius: 8px; /* Rounde
+
+    footer {
+    text-align: center;                /* Center the text */
+    padding: 20px;                    /* Ensure there's enough padding for aesthetics */
+    background: #0056b3;              /* Dark blue background to match the header */
+    color: #fff;                       /* White text color for contrast */
+    position: relative;                /* Allows for natural flow in the document */
+    bottom: 0;                         /* Aligns footer at the bottom */
+    width: 100%;                       /* Full width of the viewport */
+    margin-top: 20px;                 /* Space above footer to separate from the content */
+    clear: both;                       /* Ensures the footer stays below floated elements, if any */
+}
+
