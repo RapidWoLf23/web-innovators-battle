@@ -4,11 +4,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light background color */
+    background-image: url('thomas-griesbeck-BS-Uxe8wU5Y-unsplash'); /* Replace with your image file name */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* White font color for visibility */
 }
 
 header {
-    background: #0056b3; /* Dark blue background for header */
+    background: rgba(128, 128, 128, 0.8); /* Semi-transparent grey background */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -30,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* White text color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s; /* Smooth transition for hover effect */
@@ -43,7 +47,7 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: 10px;
-    background: #fff; /* White background for sections */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -61,7 +65,7 @@ ul {
 footer {
     text-align: center;
     padding: 20px; /* Ensure there's enough padding */
-    background: #0056b3; /* Same color as header */
+    background: rgba(128, 128, 128, 0.8); /* Semi-transparent grey background */
     color: #fff;
     position: relative; /* Allows for natural flow in the document */
     bottom: 0;
