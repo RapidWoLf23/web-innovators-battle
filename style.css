@@ -126,9 +126,10 @@ html {
 
 .title {
     font-family: 'Lobster', cursive; /* Eye-catching font */
-    font-size: 36px; /* Larger font size */
-    color: #fff; /* White color for visibility */
+    font-size: 48px; /* Increase font size */
+    color: #CCAA33; /* Yellow ochre color */
     text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
     margin: 0 20px; /* Add some margin */
 }
 
