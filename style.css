@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern, clean font style */
+    font-family: 'Montserrat', sans-serif; /* More modern and readable */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,6 +9,9 @@ body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     color: #000; /* Black font color for better visibility */
+    h1, h2 {
+    font-family: 'Lobster', cursive;
+}
 
     body::before {
     content: "";
@@ -181,16 +184,17 @@ html {
 
 
 footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
     text-align: center;
-    padding: 20px; /* Ensure there's enough padding */
-    background: rgba(211, 211, 211, 0.6); /* Lighter grey background for better image visibility */
-    color: #000; /* Black text */
-    position: relative; /* Allows for natural flow in the document */
+    font-size: 14px;
+    margin-top: 20px;
+    position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20px; /* Space above footer */
-    clear: both; /* Ensures the footer stays below floated elements, if any */
 }
+
 
 <script>
     // Function to add 'visible' class to sections in view
@@ -213,6 +217,22 @@ footer {
     // Initial check on page load
     window.addEventListener('load', handleScroll);
 </script>
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .title {
+        font-size: 36px; /* Reduce title size for mobile */
+    }
+}
+
 
 
 /* Media Queries for Responsive Design */
