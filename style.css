@@ -9,6 +9,18 @@ body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     color: #000; /* Black font color for better visibility */
+
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1; /* Keep it behind all elements */
+}
+
 }
 
 header {
@@ -46,22 +58,25 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #000; /* Black text color */
+    padding: 10px 20px;
+    background-color: #CCAA33; /* Yellow ochre button background */
+    color: #fff; /* White text */
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Gold color on hover */
+    background-color: #996600; /* Darker yellow ochre on hover */
 }
 
 #nptel-courses {
@@ -137,6 +152,12 @@ section {
     transition: opacity 1s ease; /* Transition effect */
 }
 
+section.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up as it fades in */
+}
+
+
 /* Make sections visible when they are in the viewport */
 section.visible {
     opacity: 1; /* Fade in */
@@ -170,6 +191,29 @@ footer {
     margin-top: 20px; /* Space above footer */
     clear: both; /* Ensures the footer stays below floated elements, if any */
 }
+
+<script>
+    // Function to add 'visible' class to sections in view
+    function handleScroll() {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    // Add translateY and opacity transition for fade-in with movement
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 1s ease, transform 1s ease';
+    });
+
+    // Initial check on page load
+    window.addEventListener('load', handleScroll);
+</script>
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
