@@ -64,6 +64,29 @@ nav ul li a:hover {
     color: #ffd700; /* Gold color on hover */
 }
 
+#nptel-courses {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#nptel-courses h2 {
+    color: #000; /* Black color for heading */
+    border-bottom: 2px solid #CCAA33; /* Yellow ochre underline for consistency */
+    padding-bottom: 10px;
+}
+
+#nptel-courses ul {
+    margin-left: 20px; /* Indent for bullet points */
+    list-style-type: disc; /* Standard bullet points */
+}
+
+#nptel-courses li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
 section {
     padding: 20px;
     margin: 10px;
