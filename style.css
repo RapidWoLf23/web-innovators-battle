@@ -236,11 +236,15 @@ footer {
         font-size: 18px; /* Slightly smaller font for mobile */
     }
 
-    /* Title (Web Innovators Battle) */
     .title {
-        font-size: 32px; /* Reduce title size for better visibility */
-        margin: 15px 0; /* Add some margin */
-    }
+    font-family: 'Lobster', cursive; /* Eye-catching font */
+    font-size: 48px; /* Larger font size */
+    color: #FFA500; /* Orange title */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    margin: 0 20px; /* Add some margin */
+}
+
 
     /* About Section */
     .about-content {
