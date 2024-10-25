@@ -174,12 +174,13 @@ html {
 
 .title {
     font-family: 'Lobster', cursive; /* Eye-catching font */
-    font-size: 48px; /* Increase font size */
-    color: #CCAA33; /* Yellow ochre color */
+    font-size: 48px; /* Larger font size */
+    color: #D3D3D3; /* Light grey title */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make the text bold */
     margin: 0 20px; /* Add some margin */
 }
+
 
 
 
