@@ -218,27 +218,60 @@ footer {
     window.addEventListener('load', handleScroll);
 </script>
 
+/* Responsive Design for Mobile Devices */
 @media (max-width: 768px) {
+    /* Navigation Links */
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Add space between links */
     }
 
+    nav ul li a {
+        padding: 10px 15px; /* Adjust padding for mobile */
+        font-size: 18px; /* Slightly smaller font for mobile */
+    }
+
+    /* Title (Web Innovators Battle) */
     .title {
-        font-size: 36px; /* Reduce title size for mobile */
+        font-size: 32px; /* Reduce title size for better visibility */
+        margin: 15px 0; /* Add some margin */
     }
+
+    /* About Section */
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align image and text */
+        text-align: center; /* Center align text */
+    }
+
+    .passport-photo {
+        margin-bottom: 15px; /* Space between the image and text */
+        max-width: 100px; /* Reduce the image size on mobile */
+    }
+
+    /* Section Padding and Margin for Better Spacing on Mobile */
+    section {
+        padding: 15px;
+        margin: 10px 5px; /* Reduce margin to fit better on smaller screens */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px; /* Smaller font for the footer */
+        padding: 15px; /* Less padding for mobile */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block; /* Stack links vertically on smaller screens */
-        margin: 5px 0;
-    }
-}
+
+
